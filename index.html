@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logos/faces-logo.png">
+    <title>FACES Consulting - UIUC's Premier Student-Run Consulting Firm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="homepage">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="logos/faces_logo_transparent.png" alt="FACES Consulting Logo" class="logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="clients.html" class="nav-link">Our Clients</a></li>
+                <li><a href="members.html" class="nav-link">Leadership</a></li>
+                <li><a href="recruitment.html" class="nav-link">Recruitment</a></li>
+                <li><a href="login.html" class="nav-link">Members Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="homepage-hero">
+        <video class="homepage-hero-video" muted playsinline id="hero-video" preload="auto">
+            <source src="videos/hero-video.mp4" type="video/mp4">
+            <source src="videos/hero-video.webm" type="video/webm">
+            <!-- Fallback image if video doesn't load -->
+            <img src="images/hero.jpg" alt="Hero background">
+        </video>
+        <div class="homepage-hero-content">
+            <h1 class="homepage-hero-title">Innovation. Inclusion. Inspiration.</h1>
+        </div>
+    </section>
+
+    <!-- Who We Are + Metrics Section -->
+    <section class="two-column-section">
+        <div class="who-we-are-section">
+            <span class="section-label">WHO WE ARE</span>
+            <p class="who-we-are-text">
+                FACES Consulting is the University of Illinois Urbana-Champaign's premier consulting organization with a strong international and cross-cultural focus. We equip students with rigorous, tailored training and real-world consulting engagements, enabling them to deliver impact across industries while developing a deep understanding of both global and domestic business environments.
+            </p>
+            <a href="about.html" class="btn-outline">LEARN MORE</a>
+        </div>
+        <div class="metrics-section">
+            <div class="metrics-grid">
+                <div class="metric-tile">
+                    <span class="metric-number">20+</span>
+                    <p class="metric-label">Diverse Industries Advised</p>
+                </div>
+                <div class="metric-tile">
+                    <span class="metric-number">60+</span>
+                    <p class="metric-label">Clients across North America, East Asia, and UAE region</p>
+                </div>
+                <div class="metric-tile">
+                    <span class="metric-number">97%</span>
+                    <p class="metric-label">Client Satisfaction and Repeat Partnership Rate</p>
+                </div>
+                <div class="metric-tile">
+                    <span class="metric-number">50</span>
+                    <p class="metric-label">Top 10% Students across the University of Illinois</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Tiles + Market Leadership Section -->
+    <section class="two-column-section">
+        <div class="image-tiles-section">
+            <div class="image-tiles-grid">
+                <a href="about.html" class="image-tile" style="background-image: url('images/tile-1.jpg');">
+                    <div class="image-tile-title">What We Do</div>
+                </a>
+                <a href="clients.html" class="image-tile" style="background-image: url('images/tile-2.png');">
+                    <div class="image-tile-title">Past Projects</div>
+                </a>
+                <a href="members.html" class="image-tile" style="background-image: url('images/tile-3.jpg');">
+                    <div class="image-tile-title">Our People</div>
+                </a>
+                <a href="recruitment.html" class="image-tile" style="background-image: url('images/tile-4.jpg');">
+                    <div class="image-tile-title">Join Us</div>
+                </a>
+            </div>
+        </div>
+        <div class="market-leadership-section">
+            <span class="section-label">MARKET LEADERSHIP</span>
+            <h2 class="market-leadership-headline">Professional by Practice</h2>
+            <p class="market-leadership-text">
+                FACES Consulting operates as a student-led consulting firm at the University of Illinois Urbana-Champaign that holds itself to a professional standard in client work. We partner with startups, entrepreneurs, and small to mid-sized companies across industries, delivering clear analysis and practical recommendations in strategy, financial analysis, marketing, and data analytics. Our teams are structured, accountable, and expected to meet defined expectations for preparation, communication, and execution. With an active client presence in Chicago and Champaign-Urbana, FACES approaches each engagement with discipline, follow-through, and respect for the responsibility of advising real businesses.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 FACES Consulting. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/facesconsulting/" target="_blank" class="footer-icon" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.23 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162 0 3.403 2.759 6.162 6.162 6.162 3.403 0 6.162-2.759 6.162-6.162 0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4 2.209 0 4 1.791 4 4 0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/faces-at-uiuc/" target="_blank" class="footer-icon" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="currentColor"/>
+                    </svg>
+                </a>
+                <img src="images/gies-business.png" alt="Gies College of Business" class="footer-logo">
+                <img src="images/grainger.png" alt="Grainger College of Engineering" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
