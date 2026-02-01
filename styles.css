@@ -1741,20 +1741,63 @@ body.homepage .page-body {
 
 @media (max-width: 640px) {
     .executive-board-section {
-        padding: 3rem 0;
+        padding: 2rem 1rem 3rem;
     }
     
     .members-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        max-width: 100%;
+    }
+    
+    .member-card {
+        min-height: 0;
+        padding: 0;
+        overflow: hidden;
     }
     
     .member-image-wrapper {
-        height: 350px;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        overflow: hidden;
+    }
+    
+    .member-image,
+    .member-image-andrew {
+        object-fit: cover;
+        object-position: center top;
+    }
+    
+    .member-info {
+        padding: 1rem 1rem 1.25rem;
     }
     
     .executive-board-title {
         margin-bottom: 2rem;
+        padding: 0 0.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .executive-board-section {
+        padding: 1.5rem 0.75rem 2.5rem;
+    }
+    
+    .member-image-wrapper {
+        aspect-ratio: 4 / 5;
+    }
+    
+    .member-info {
+        padding: 0.875rem 0.75rem 1rem;
+    }
+    
+    .member-name {
+        font-size: 0.9375rem;
+    }
+    
+    .member-role,
+    .member-email {
+        font-size: 0.8125rem;
     }
 }
 

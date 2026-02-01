@@ -87,14 +87,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Set active nav link based on current page
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    // Set active nav link based on current page (works with .html and clean URLs)
+    const pathPart = window.location.pathname.split('/').filter(Boolean).pop() || '';
+    const currentPage = pathPart.replace(/\.html$/i, '') || 'index';
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
-        const linkHref = link.getAttribute('href');
-        if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
+        const linkHref = link.getAttribute('href') || '';
+        const linkPage = linkHref.replace(/\.html$/i, '').replace(/^.*\//, '') || 'index';
+        if (linkPage === currentPage) {
             link.classList.add('active');
         }
     });
