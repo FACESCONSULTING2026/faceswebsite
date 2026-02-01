@@ -188,15 +188,15 @@ body.homepage .logo-link {
     box-sizing: border-box;
     padding: 0 !important;
     margin: 0 !important;
+    overflow: hidden;
 }
 
 .logo,
 body .logo,
 body.homepage .logo,
 img.logo {
-    height: 70px !important;
-    max-height: 70px !important;
-    min-height: 70px !important;
+    height: 95px !important;
+    max-height: 95px !important;
     width: auto !important;
     transition: transform 0.3s ease;
     object-fit: contain;
@@ -208,6 +208,10 @@ img.logo {
 
 .logo:hover {
     transform: scale(1.05);
+}
+
+.logo-link .logo {
+    transform-origin: center center;
 }
 
 .nav-menu {
@@ -603,8 +607,8 @@ body.homepage .page-content {
     }
     
     .logo {
-        height: 70px !important;
-        max-height: 70px !important;
+        height: 95px !important;
+        max-height: 95px !important;
     }
 
     .container {
