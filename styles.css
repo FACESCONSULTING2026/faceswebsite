@@ -1543,11 +1543,66 @@ a, button, .hamburger, .nav-link, .btn-outline, .image-tile {
     }
     
     .placements-section {
-        padding: 3rem 0;
+        padding: 2.5rem 1rem 3rem;
+    }
+
+    .placements-title {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+
+    .ticker-row {
+        margin-bottom: 1.5rem;
+    }
+
+    .ticker-content {
+        gap: 2rem;
+    }
+
+    .placement-logo {
+        height: 36px;
     }
     
     .cta-band {
         padding: 3rem 1.5rem;
+    }
+}
+
+/* Placements: small phones */
+@media (max-width: 480px) {
+    .placements-section {
+        padding: 2rem 0.75rem 2.5rem;
+    }
+
+    .placements-title {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.03em;
+    }
+
+    .ticker-row {
+        margin-bottom: 1.25rem;
+    }
+
+    .ticker-row-1 {
+        animation-duration: 35s;
+    }
+
+    .ticker-row-2 {
+        animation-duration: 40s;
+    }
+
+    .ticker-row-3 {
+        animation-duration: 45s;
+    }
+
+    .ticker-content {
+        gap: 1.5rem;
+    }
+
+    .placement-logo {
+        height: 28px;
     }
 }
 
