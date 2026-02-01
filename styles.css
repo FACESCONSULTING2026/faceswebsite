@@ -972,6 +972,143 @@ body.homepage {
     }
 }
 
+/* Mobile-first: small phones and touch optimization */
+@media (max-width: 480px) {
+    .two-column-section {
+        min-height: auto;
+    }
+
+    .homepage-hero {
+        min-height: 400px;
+        height: 55vh;
+    }
+
+    .homepage-hero-content {
+        padding: 0 1.25rem;
+    }
+
+    .homepage-hero-title {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .who-we-are-section,
+    .metrics-section {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .who-we-are-text {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+    }
+
+    .market-leadership-section {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .market-leadership-headline {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .market-leadership-text {
+        font-size: 1rem;
+    }
+
+    .metrics-grid {
+        gap: 2rem;
+    }
+
+    .metric-number {
+        font-size: 2.5rem;
+    }
+
+    .metric-label {
+        font-size: 0.8125rem;
+        max-width: 100%;
+    }
+
+    .image-tile {
+        aspect-ratio: 4/3;
+    }
+
+    .image-tile-title {
+        font-size: 0.8125rem;
+    }
+
+    .footer {
+        padding: 1.5rem 1rem;
+        padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0));
+    }
+
+    .footer p {
+        font-size: 0.8125rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        gap: 1.25rem;
+    }
+
+    .footer-logo {
+        height: 28px;
+    }
+}
+
+/* Nav: touch-friendly hamburger and safe area */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        min-width: 44px;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .nav-menu {
+        padding: calc(2rem + env(safe-area-inset-top, 0)) 0 2rem 0;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 0.75rem;
+    }
+
+    .logo {
+        height: 52px !important;
+        max-height: 52px !important;
+    }
+
+    .logo-link {
+        height: 52px !important;
+        max-height: 52px !important;
+    }
+}
+
+/* Touch: remove tap highlight on interactive elements */
+a, button, .hamburger, .nav-link, .btn-outline, .image-tile {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 640px) {
+    .btn-outline {
+        display: block;
+        text-align: center;
+        padding: 0.875rem 1.25rem;
+    }
+}
+
 /* ============================================
    ABOUT PAGE SPECIFIC STYLES
    ============================================ */
