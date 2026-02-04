@@ -1665,7 +1665,7 @@ body.homepage .page-body {
     flex-direction: column;
     font-family: 'IBM Plex Sans', sans-serif;
     padding: 1.25rem;
-    min-height: 720px;
+    min-height: 620px;
 }
 
 .member-card:hover {
@@ -1675,7 +1675,7 @@ body.homepage .page-body {
 
 .member-image-wrapper {
     width: 100%;
-    height: 620px;
+    height: 520px;
     overflow: hidden;
     background-color: var(--off-white);
     position: relative;
@@ -1739,7 +1739,7 @@ body.homepage .page-body {
     }
     
     .member-image-wrapper {
-        height: 460px;
+        height: 400px;
     }
 }
 
@@ -1762,7 +1762,7 @@ body.homepage .page-body {
     
     .member-image-wrapper {
         height: auto;
-        aspect-ratio: 3 / 4.25;
+        aspect-ratio: 3 / 4;
         overflow: hidden;
     }
     
@@ -1788,7 +1788,7 @@ body.homepage .page-body {
     }
     
     .member-image-wrapper {
-        aspect-ratio: 4 / 5.25;
+        aspect-ratio: 4 / 5;
     }
     
     .member-info {
