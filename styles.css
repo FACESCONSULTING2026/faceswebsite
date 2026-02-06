@@ -2896,6 +2896,14 @@ body.homepage .page-body {
     font-style: italic;
 }
 
+.timeline-card-passed-stamp {
+    width: 36px;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: auto;
+    opacity: 0.9;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
     .recruitment-stamp-image {
@@ -2931,6 +2939,11 @@ body.homepage .page-body {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
+    }
+
+    .timeline-card-passed-stamp {
+        align-self: flex-end;
+        margin-left: 0;
     }
 
     .timeline-date {
